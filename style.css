@@ -223,7 +223,7 @@ ul a{
 .foot-panel3{
     background-color: #222f3d;
     color: white;
-    border-top: 0.5px solid white;
+    border-top: 1px solid white;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -256,4 +256,76 @@ ul a{
     padding-top: 5px;
     
     
+}
+
+
+
+/* RESPONSIVE DESIGN (MOBILE) */
+
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-address,
+    .nav-singin,
+    .nav-return {
+        display: none; 
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Panel */
+    .panel-ops {
+        display: none; 
+    }
+
+    .panel {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    /* Hero section */
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-msg {
+        width: 95%;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    /* Shop section */
+    .shop-section {
+        justify-content: center;
+    }
+
+    .box {
+        width: 90%; 
+        height: auto;
+    }
+
+    .box-img {
+        height: 250px;
+    }
+
+    /* Footer */
+    .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
 }
